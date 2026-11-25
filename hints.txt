@@ -1,0 +1,8 @@
+| Tipo | Quando usar | Exemplo |
+|---|---|---|
+| `feat` | Adicionar funcionalidade | `feat(api): adiciona suporte a paginação` |
+| `fix` | Corrigir um erro | `fix(api): trata respostas sem conteúdo` |
+| `refactor` | Reorganizar código mantendo o comportamento | `refactor(api): centraliza a configuração do cliente HTTP` |
+| `docs` | Alterar documentação | `docs: documenta a configuração da API` |
+| `test` | Adicionar ou ajustar testes | `test(api): cobre respostas com erro` |
+| `chore` | Fazer manutenção ou configuração geral | `chore: configura a estrutura inicial do projeto` |
