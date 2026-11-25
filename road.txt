@@ -1,0 +1,42 @@
+
+Mês 1: Fundamentos de Dados, Python e Containers
+
+O objetivo desta fase é dominar o ambiente de execução isolado e a manipulação eficiente de dados em memória.
+• Python voltado para Dados: Foque em manipulação de arquivos (Parquet, JSON, CSV), requisições de APIs, tipagem (type hints), testes unitários (pytest) e bibliotecas como Pandas e Polars (muito valorizada por ser rápida e escrita em Rust).
+• SQL Analítico Avançado: Pratique Window Functions (ROW_NUMBER, LAG, LEAD), CTEs recursivas, particionamento de tabelas e leitura de planos de execução (EXPLAIN ANALYZE) no PostgreSQL.
+• Linux e Docker: Aprenda a empacotar scripts de ingestão em containers e usar docker-compose para subir bancos de dados e ferramentas localmente.
+• Projeto Prático 1: Crie um script em Python empacotado no Docker que extrai dados de uma API pública diariamente, valida o esquema com Pydantic e salva em um banco PostgreSQL local.
+
+Mês 2: Orquestração e Transformação Moderna (Airflow + dbt)
+
+Nesta etapa, você aprenderá as duas ferramentas mais cobradas em entrevistas remotas para gerenciar fluxos de dados.
+• Apache Airflow: Entenda a arquitetura de DAGs, operadores, Hooks, gerenciamento de dependências e boas práticas de idempotência (garantir que rodar um pipeline duas vezes não duplique dados).
+• dbt (Data Build Tool): Aprenda a fazer o "T" do ELT usando SQL modular. Estude modelagem dimensional (Tabelas Fato e Dimensão), testes automatizados de qualidade de dados (Data Quality), snapshots e documentação.
+• Projeto Prático 2: Conecte o Airflow ao projeto anterior para agendar a extração e use o dbt para transformar os dados brutos do PostgreSQL em tabelas analíticas prontas para BI.
+
+Mês 3: Big Data, Processamento Distribuído e Nuvem
+
+Aqui você sai do ambiente local e escala para volumes massivos de dados na nuvem.
+• Apache Spark (PySpark): Aproveite sua base em Java (já que o Spark roda na JVM) para entender como funciona o processamento distribuído, particionamento, shuffling e otimização de memória.
+• Nuvem (AWS ou GCP) e Data Warehouse: Escolha uma nuvem principal. Na AWS, foque em S3 (Data Lake), Glue, IAM e Redshift (ou Snowflake). No GCP, foque em Cloud Storage e BigQuery.
+• Arquitetura Lakehouse: Estude formatos de tabela abertos como Delta Lake ou Apache Iceberg, que permitem transações ACID sobre arquivos no Data Lake.
+• Projeto Prático 3 (Portfólio Principal): Construa um pipeline end-to-end na nuvem (usando o nível gratuito). Ingira dados no S3/GCS, processe em camadas (Bronze, Silver, Gold) com PySpark ou dbt, orquestre com Airflow e disponibilize no BigQuery ou Snowflake.
+
+Mês 4: Streaming, Governança, Certificação e Preparação
+
+A reta final prepara você para requisitos de nível pleno/sênior e para a triagem dos recrutadores internacionais.
+• Streaming Básico (Apache Kafka): Entenda produtores, consumidores, tópicos e como integrar dados em tempo real (sua experiência com Java ajuda muito na compreensão da arquitetura do Kafka).
+• CI/CD e Infraestrutura como Código: Configure um fluxo básico no GitHub Actions para rodar testes no seu código Python/dbt a cada commit e estude o básico de Terraform para provisionar buckets na nuvem.
+• Certificação Estratégica: Dedique as últimas semanas para estudar e agendar uma certificação reconhecida globalmente, como a AWS Certified Data Engineer - Associate ou a Databricks Certified Data Engineer Associate.
+• Vitrine no GitHub: Documente todos os seus projetos em inglês, incluindo diagramas de arquitetura claros (feitos no Excalidraw ou Draw.io) explicando o problema de negócio e as decisões técnicas tomadas.
+
+---------------------------------------------------------------------
+
+1. Requisitos para Data Engineer (Vagas Remotas LATAM / Global)
+
+As empresas dos EUA e Europa buscam profissionais autônomos capazes de construir e manter pipelines escaláveis sem microgerenciamento.
+• Linguagens e SQL avançado. Domínio profundo de SQL (window functions, CTEs, particionamento e otimização de performance) aliado a Python (padrão do mercado) e/ou Java/Scala (muito valorizados no ecossistema Spark e Kafka).
+• Processamento e Orquestração. Experiência prática com ferramentas de ETL/ELT e orquestradores como Apache Airflow, dbt, Apache Spark ou Databricks.
+• Plataformas em Nuvem. Conhecimento sólido em pelo menos um grande provedor (AWS, GCP ou Azure) e em Data Warehouses modernos como Snowflake, BigQuery ou Redshift.
+• Engenharia de Software e DevOps. Familiaridade com Git, Docker, CI/CD, Linux e boas práticas de testes e qualidade de dados (Data Quality).
+• Inglês fluente para comunicação assíncrona. Capacidade de escrever documentação técnica clara e participar de reuniões diárias em inglês.
